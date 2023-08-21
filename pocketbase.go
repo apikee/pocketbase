@@ -1,6 +1,7 @@
 package pocketbase
 
 import (
+	"fmt"
 	"os"
 	"os/signal"
 	"path/filepath"
@@ -261,4 +262,8 @@ func inspectRuntime() (baseDir string, withGoRun bool) {
 		baseDir = filepath.Dir(os.Args[0])
 	}
 	return
+}
+
+func SayHello() {
+	fmt.Println("HELLO FROM POCKETBASE")
 }
